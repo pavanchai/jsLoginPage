@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+  <style>
+    .errors {
+      display: none;
+    }
+
+    .errors.show {
+      display: block;
+    }
+  </style>
+    <title>Form submit</title>
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <form action="thnku.html" id="form">
+        <div class="errors">
+            <h3 class="error-title">Error</h3>
+            <ul class="error-list"></ul>
+        </div>
+
+    <div class="form-group">
+        <label for="username">username</label>
+        <input type="text" id="username" name="user" autocomplete="name">
+    </div>
+    <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" autocomplete="pass">
+    </div>
+    <div class="form-group">
+        <label for="password-confirmation"> password conformation</label>
+        <input type="password" id="password-confirmation" name="password-confirmation" autocomplete="samepass">
+    </div>
+    <div class="form-group">
+        <label for="terms">
+        <input type="checkbox" id="terms" name="terms" autocomplete="accept">
+          Agree for terms??
+        </label>
+    </div>
+    <button type="submit">create account</button>
+    </form>
+</body>
+</html>
